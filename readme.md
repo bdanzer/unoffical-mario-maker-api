@@ -111,10 +111,11 @@ You can chain multiple async functions like below with promise all
     let bookmarkPromises = [
         loggedIn.bookmark('DF5D-0000-03B7-E3F3'),
         loggedIn.bookmark('F870-0000-03EE-27E7')
-    ]
+    ];
 
     //Get all the data from the async functions
     let bookmarkData = await Promise.all(bookmarkPromises);
+    console.log(bookmarkData);
 
     let unBookmarkPromises = [
         loggedIn.unBookmark('DF5D-0000-03B7-E3F3'),
