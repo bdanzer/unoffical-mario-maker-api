@@ -1,6 +1,8 @@
 # Unofficial Mario Maker Api
+This api utilizes Cheerio, & Axios to scrape and fetch data from Mario Makers bookmark site.
 
 ## Methods
+All public methods are asynchronous functions
 
 ### login
 
