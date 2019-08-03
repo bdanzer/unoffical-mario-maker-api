@@ -20,7 +20,7 @@ class MM {
         return `_supermariomakerbookmark_session=${CookiesObj['_supermariomakerbookmark_session']}`;
     }
 
-    async login({username, password}, callback = '') {
+    async login({ username, password }, _callback = '') {
         var challenge = await axios({
             method: "get",
             url: this.bookmarkUrl,
@@ -102,7 +102,7 @@ class MM {
         return this;
     }
 
-    async getCourse(courseId, data = '', callback = null) {
+    async getCourse(courseId, _data = '', callback = null) {
         var htmlResponse = await axios.get(`${this.courseUrl}/${courseId}`, {
             headers: {
                 Cookie: this.sessionCookie
@@ -153,7 +153,7 @@ class MM {
             'right': ''
         };
 
-        $(types).each(function(i, typo) {
+        $(types).each(function(_i, typo) {
             let typoEl = $(typo);
 
             if (typoEl.hasClass('typography-slash') || typoEl.hasClass('typography-second')) {
@@ -184,7 +184,7 @@ class MM {
     private getCreatorInfo(el, $) {
         var creators = [];
 
-        el.each(function(i, creatorWrap) {
+        el.each(function(_i, creatorWrap) {
             creatorWrap = $(creatorWrap);
             creators.push({
                 "name": creatorWrap.find('.name').text(),
@@ -201,7 +201,7 @@ class MM {
         var _this = this;
         let courseData = {};
 
-        courseCards.each(function (i, courseCard) {
+        courseCards.each(function (_i, _courseCard) {
             let cardEl = $(this);
 
             let courseImg = cardEl.find('.course-image img');

@@ -27,7 +27,7 @@ class MM {
         let CookiesObj = utils_1.getCookieFromArray(cookies);
         return `_supermariomakerbookmark_session=${CookiesObj['_supermariomakerbookmark_session']}`;
     }
-    login({ username, password }, callback = '') {
+    login({ username, password }, _callback = '') {
         return __awaiter(this, void 0, void 0, function* () {
             var challenge = yield axios_1.default({
                 method: "get",
@@ -103,7 +103,7 @@ class MM {
             return this;
         });
     }
-    getCourse(courseId, data = '', callback = null) {
+    getCourse(courseId, _data = '', callback = null) {
         return __awaiter(this, void 0, void 0, function* () {
             var htmlResponse = yield axios_1.default.get(`${this.courseUrl}/${courseId}`, {
                 headers: {
@@ -147,7 +147,7 @@ class MM {
             'middle': '',
             'right': ''
         };
-        $(types).each(function (i, typo) {
+        $(types).each(function (_i, typo) {
             let typoEl = $(typo);
             if (typoEl.hasClass('typography-slash') || typoEl.hasClass('typography-second')) {
                 divided = true;
@@ -170,7 +170,7 @@ class MM {
     }
     getCreatorInfo(el, $) {
         var creators = [];
-        el.each(function (i, creatorWrap) {
+        el.each(function (_i, creatorWrap) {
             creatorWrap = $(creatorWrap);
             creators.push({
                 "name": creatorWrap.find('.name').text(),
@@ -184,7 +184,7 @@ class MM {
     getCourseCardInfo(courseCards, $) {
         var _this = this;
         let courseData = {};
-        courseCards.each(function (i, courseCard) {
+        courseCards.each(function (_i, _courseCard) {
             let cardEl = $(this);
             let courseImg = cardEl.find('.course-image img');
             let courseId = courseImg.attr('alt');
