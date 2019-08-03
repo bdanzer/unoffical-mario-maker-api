@@ -8,9 +8,8 @@ All public methods are asynchronous functions
 Logs into Mario Maker bookmark site and sets session
 
 
-@param: json object that takes username and password
-
-@returns: returns the MM class instance
+* @param: json object that takes username and password
+* @returns: returns the MM class instance
 
 ```js
 (async () => {
