@@ -1,3 +1,6 @@
+## 1.2.1
+Fixing more issues with exports
+
 ## 1.2.0
 Fixed issue with exports
 

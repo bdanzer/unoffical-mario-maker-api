@@ -1,2 +1,4 @@
 import MM from './lib/MM';
-export default new MM;
+
+const instance = new MM();
+export { instance as MM };
