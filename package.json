@@ -1,6 +1,6 @@
 {
   "name": "mario-maker-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This is an unofficial api for Mario Maker that gets courses, bookmarks courses, unbookmarks courses. Read the readme to find out more :).",
   "main": "dist/index.js",
   "scripts": {
