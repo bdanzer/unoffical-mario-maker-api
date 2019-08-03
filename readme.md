@@ -5,6 +5,19 @@ This api utilizes Cheerio, & Axios to scrape and fetch data from Mario Makers bo
 All public methods are asynchronous functions
 
 ### login
+Logs into Mario Maker bookmark site and sets session
+
+@params: json object that takes username and password
+@returns: returns the MM class instance
+
+```js
+(async () => {
+    let loggedIn = await MM.login({
+        'username': 'Nintendo Username',
+        'password': 'Nintendo Pass'
+    });
+})()
+```
 
 ### bookmark
 
