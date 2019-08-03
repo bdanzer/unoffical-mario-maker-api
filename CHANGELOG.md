@@ -1,3 +1,6 @@
+## 1.3.0
+Updated Docs
+
 ## 1.2.2
 Making export cleaner
 
