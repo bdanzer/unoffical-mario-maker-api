@@ -49,3 +49,6 @@
 
 ## TODO:
 Need to still add conditionals for when things go wrong, like wrong course id or not logged in.
+
+## Contribution:
+For contribution please open up an issue and follow gitflow workflow practices: https://www.atlassian.com/git/tutorials/comparing-workflows
