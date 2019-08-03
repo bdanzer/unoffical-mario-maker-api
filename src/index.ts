@@ -1,2 +1,2 @@
 import MM from './lib/MM';
-export default MM;
+export default new MM;

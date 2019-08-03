@@ -326,4 +326,4 @@ class MM {
     }
 }
 
-export default new MM();
+export default MM;

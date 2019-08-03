@@ -298,4 +298,4 @@ class MM {
         });
     }
 }
-exports.default = new MM();
+exports.default = MM;
