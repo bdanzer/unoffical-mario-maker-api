@@ -25,9 +25,8 @@ Logs into Mario Maker bookmark site and sets session
 This requires you to be logged in so you would log in first then start bookmarking such as:
 
 
-@param: courseId
-
-@returns: Course JSON object
+* @param: courseId
+* @returns: Course JSON object
 
 ```js
 (async () => {
@@ -45,9 +44,8 @@ This requires you to be logged in so you would log in first then start bookmarki
 As above requires you to be logged in so you would log in first then start unbookmarking such as:
 
 
-@param: courseId
-
-@returns: Course JSON object
+* @param: courseId
+* @returns: Course JSON object
 
 ```js
 (async () => {
@@ -65,9 +63,8 @@ As above requires you to be logged in so you would log in first then start unboo
 As above requires you to be logged in so you would log in first then get all user bookmarks such as:
 
 
-@param: options, only takes paged
-
-@returns: All user bookmarked courses JSON array
+* @param: options, only takes paged
+* @returns: All user bookmarked courses JSON array
 
 ```js
 (async () => {
@@ -82,9 +79,8 @@ As above requires you to be logged in so you would log in first then get all use
 This does not require being signed in to use
 
 
-@param: courseId
-
-@returns: JSON info about course
+* @param: courseId
+* @returns: JSON info about course
 
 ```js
 (async () => {
